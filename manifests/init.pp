@@ -23,8 +23,6 @@
 class amazon_s3 (
   Optional[String] $aws_access_key       = undef,
   Optional[String] $secret_access_key    = undef,
-  String           $s3fs_version         = $amazon_s3::params::s3fs_version,
-  Boolean          $include_mime_package = $amazon_s3::params::include_mime_package,
 ) inherits amazon_s3::params {
 
   # == Variables == #
